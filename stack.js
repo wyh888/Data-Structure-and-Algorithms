@@ -37,3 +37,23 @@ function Stack(){
 		console.log(items.toString());
 	};
 }
+
+
+//十进制转换为二进制
+function divideBy2(deNumber){
+	var remStack = new Stack(),
+		rem,
+		binaryString = '';
+
+	while(deNumber > 0){
+		rem = Math.floor(deNumber % 2);
+		remStack.push(rem);
+		decNumber = Math.floor(deNumber / 2);
+	}
+
+	while(!remStack.isEmpty()){
+		binaryString += remStack.pop().toString();
+	}
+
+	return binaryString;
+}
