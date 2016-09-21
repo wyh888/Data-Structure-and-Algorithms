@@ -1,4 +1,7 @@
-// 二叉搜索树BST
+/**
+  * 二叉搜索树BST
+**/
+
 function BinarySearchTree(){
 	var root = null;
 
